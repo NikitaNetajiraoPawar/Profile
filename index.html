@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita Pawar - Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #f3f4f6; /* Light gray background */
+            color: #333; /* Default text color */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+        }
+
+        .dark-mode body {
+            background-color: #1f2937; /* Dark gray background in dark mode */
+            color: #ffffff; /* White text color in dark mode */
+        }
+
+        .navbar {
+            background-color: #0A192F; /* Dark blue background for navbar */
+        }
+
+        .navbar a {
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            transform: scale(1.05);
+        }
+
+        .social-icon {
+            width: 28px;
+            height: 28px;
+        }
+
+        .section-title {
+            color: #333;
+        }
+
+        .section-header {
+            background-color: #60A5FA; /* Blue background for section headers */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-content {
+            background-color: #EDF2F7; /* Light gray background for section content */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            margin-bottom: 30px;
+            height: 100%; /* Ensure each card takes up full height */
+            display: flex; /* Use flex layout */
+            flex-direction: column; /* Stack children vertically */
+        }
+
+        .section-content.dark-mode {
+            background-color: #2D3748; /* Dark gray background for section content in dark mode */
+        }
+
+        /* Animation for Section Content */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated-section {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar flex justify-between items-center py-4 px-6 shadow-md">
+        <div class="flex items-center space-x-4">
+            <h1 class="text-white text-2xl font-semibold">Nikita Pawar</h1>
+            <div class="flex items-center space-x-4">
+                <a href="#home" class="text-lg font-semibold hover:text-gray-300">Home</a>
+                <a href="#work" class="text-lg font-semibold hover:text-gray-300">Work</a>
+                <a href="#about" class="text-lg font-semibold hover:text-gray-300">About</a>
+            </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-4">
+            <div class="flex items-center space-x-4">
+                <a href="https://www.linkedin.com/in/nikita-pawar-9bab4113a/" target="_blank"
+                    class="text-white transition-transform hover:scale-105">
+                    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"
+                        class="social-icon">
+                </a>
+                <a href="https://github.com/NikitaNetajiraoPawar" target="_blank"
+                    class="text-white transition-transform hover:scale-105">
+                    <img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="GitHub"
+                        class="social-icon">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills -->
+    <section id="skills" class="py-12 px-6">
+        <div class="container mx-auto">
+            <div class="section-header mb-6 animated-section">Skills</div>
+            <!-- Skills List -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="section-content rounded-lg p-6 text-gray-800 animated-section bg-white shadow-md">
+                    <p class="font-semibold mb-2">Framework & Languages</p>
+                    <p>ASP.NET MVC, C#, Entity Framework, ADO.NET, ASP.NET Core API</p>
+                </div>
+                <div class="section-content rounded-lg p-6 text-gray-800 animated-section bg-white shadow-md">
+                    <p class="font-semibold mb-2">Cloud Technologies</p>
+                    <p>Microsoft Azure (PAAS), Functions, Azure Event Grid, Storage Account, Container, Blob Storage,
+                        App Service Plan, Deployment using Azure Pipeline</p>
+                </div>
+                <div class="section-content rounded-lg p-6 text-gray-800 animated-section bg-white shadow-md">
+                    <p class="font-semibold mb-2">Database</p>
+                    <p>SQL Server, Oracle</p>
+                </div>
+                <div class="section-content rounded-lg p-6 text-gray-800 animated-section bg-white shadow-md">
+                    <p class="font-semibold mb-2">Other</p>
+                    <p>TFS, GitHub, Swagger, SonarQube</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="py-12 px-6">
+        <div class="container mx-auto">
+            <div class="section-header mb-6 animated-section">Experience</div>
+            <!-- Experience Cards -->
+            <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                <!-- Experience 1 -->
+                <a href="https://www.capgemini.com/" target="_blank" class="text-gray-800">
+                    <div class="section-content rounded-lg p-6 text-gray-800 animated-section bg-white shadow-md hover:shadow-lg transition-shadow duration-300 flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">Capgemini</h3>
+                        <p class="text-gray-700 mb-2">Associate Consultant | April 2023- Present</p>
+                        <p>Developed and implemented a critical application module/CR as per the business
+                            requirement.</p>
+                        <p class="mt-4 font-semibold">Skills:</p>
+                        <p>ASP.NET MVC, C#, SQL, ADO.NET</p>
+                    </div>
+                </a>
+                <!-- Experience 2 -->
+                <a href="https://www.publicissapient.com/" target="_blank" class="text-gray-800">
+                    <div class="section-content rounded-lg p-6 text-gray-800 animated-section bg-white shadow-md hover:shadow-lg transition-shadow duration-300 flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">Publicis Sapient</h3>
+                        <p class="text-gray-700 mb-2">Associate Technology L2 | March 2022 – April-2023</p>
+                        <p>Being a part of Development team I was working on an application which was developed
+                            using Microsoft azure (PAAS), C# Micro services architecture by analysing the older
+                            BizTalk Application in Agile Methodologies.</p>
+                        <p class="mt-4 font-semibold">Skills:</p>
+                        <p>ASP.NET Core API, SQL, Microsoft Azure</p>
+                    </div>
+                </a>
+                <!-- Experience 3 -->
+                <a href="https://www.cognizant.com/" target="_blank" class="text-gray-800">
+                    <div class="section-content rounded-lg p-6 text-gray-800 animated-section bg-white shadow-md hover:shadow-lg transition-shadow duration-300 flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">Cognizant</h3>
+                        <p class="text-gray-700 mb-2">Programmer Analyst | Dec 2018 - Feb 2022</p>
+                        <p>Developed the application module as per client requirement in asp.net core MVC & Kendo
+                            UI.</p>
+                        <p class="mt-4 font-semibold">Skills:</p>
+                        <p>ASP.NET CORE MVC, SQL</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- About -->
+     <section id="about" class="py-12 px-6">
+        <div class="container mx-auto">
+            <div class="section-header mb-6 animated-section">About</div>
+            <div class="section-content animated-section">
+                <p>
+                    Hi, I'm Nikita Pawar, a passionate software developer with expertise in ASP.NET and Microsoft Azure.
+                    Connect with me on LinkedIn or GitHub to stay updated with my latest projects and activities.
+                </p>
+                <div class="flex justify-center mt-4">
+                    <a href="https://www.linkedin.com/in/nikita-pawar-9bab4113a/" target="_blank"
+                        class="text-blue-500 hover:text-blue-700 mr-4">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/NikitaNetajiraoPawar" target="_blank"
+                        class="text-gray-500 hover:text-gray-700">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <footer class="text-center py-4">
+        <p class="text-gray-500 text-sm">&copy; 2024 Nikita Pawar. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
